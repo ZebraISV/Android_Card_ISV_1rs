@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_height="fill_parent"
+	android:weightSum="1">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="127dp">
+
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textStyle="normal|bold"
+            android:text="Zebra ZC300 Printer"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="0.08"
+            android:background="#f8f9fc" />
+
+		<ImageView
+			android:layout_width="138dp"
+			android:layout_height="95dp"
+			android:id="@+id/imageView2"
+			android:layout_margin="@dimen/std_container_margin"
+			android:src="@drawable/jaguarprinter"
+			android:layout_gravity="right|top"
+			tools:ignore="ContentDescription" />
+
+		<ImageView
+			android:layout_width="175dp"
+			android:layout_height="59dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_margin="@dimen/std_container_margin"
+			android:src="@drawable/zebra_logo_black"
+			android:id="@+id/imageView" />
+	</FrameLayout>
+
+	<Button
+		android:id="@+id/RequestPermissionButton"
+		android:text="Request USB Permission"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:background="#d0cab7" />
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Print USB Card"
+		android:id="@+id/printUSB_Button"
+		android:layout_gravity="center_horizontal"
+		android:background="#ced122" />
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="119dp"
+		android:layout_weight="0.51">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageViewCard"
+			android:layout_gravity="center" />
+
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Preview Front Image"
+			android:textStyle="normal|bold"
+			android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/PreviewImage" />
+	</FrameLayout>
+
+</LinearLayout>
